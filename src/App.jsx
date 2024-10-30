@@ -4,12 +4,17 @@ import Nav from './components/NavTabs';
 
 function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
+
   return (
     <>
+      <header>Lukas Imboden</header>
       <Nav />
       <main className="mx-3">
         <Outlet />
       </main>
+      <footer>
+        <p>Interesting Footer here!</p>
+      </footer>
     </>
   );
 }
