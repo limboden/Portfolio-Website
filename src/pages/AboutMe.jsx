@@ -1,3 +1,13 @@
+
+const styles = {
+  photo: {
+    maxHeight: '150px'
+  }
+}
+
+
+
+
 export default function AboutMe() {
   return (
     <div>
@@ -5,7 +15,7 @@ export default function AboutMe() {
       <p>
         Hi there! My name is Lukas, and I am a Full Stack Software Engineer!
       </p>
-      <img src="" alt="" /> photo here!
+      <img style={styles.photo} src="src\assets\Lukas-photo.jpeg" alt="Photo of Lukas Imboden" />
     </div>
   );
 }
