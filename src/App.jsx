@@ -7,7 +7,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
-
+  const styles = {
+    footerButtons: {
+      margin: '5px'
+    }
+  }
   return (
     <>
       <header>Lukas Imboden</header>
@@ -16,7 +20,8 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        <p>Interesting Footer here!</p>
+        <a class="btn btn-primary" target="_blank" style={styles.footerButtons} href="http://www.github.com/limboden">Github</a>
+        <a class="btn btn-primary" target="_blank" style={styles.footerButtons} href="https://www.linkedin.com/in/lukas-imboden-06b74a22a/">Linked In</a>
       </footer>
     </>
   );

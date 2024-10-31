@@ -13,6 +13,8 @@
 //   }
 // };
 
+import ProjectCard from "../components/ProjectCard";
+
 
 
 export default function Portfolio() {
@@ -20,16 +22,22 @@ export default function Portfolio() {
     <div>
       <h1>Projects Page</h1>
       <section>
-        <header>Camera</header>
+        <ProjectCard title="Portfolio" description="Newer Portfolio website(This site!)" link="./" repo="https://github.com/limboden/limboden.github.io" />
       </section>
       <section>
-        <header>Tablet</header>
+        <ProjectCard title="Old Portfolio" description="My Very First Portfolio" link="https://limboden.github.io" repo="https://github.com/limboden/limboden.github.io" />
       </section>
       <section>
-        <header>Toilet Paper</header>
+        <ProjectCard title="Portfolio" description="Newer Portfolio website(This site!)" link="./" repo="https://github.com/limboden/limboden.github.io" />
       </section>
       <section>
-        <header>Wooden Spoons</header>
+        <ProjectCard title="Portfolio" description="Newer Portfolio website(This site!)" link="./" repo="https://github.com/limboden/limboden.github.io" />
+      </section>
+      <section>
+        <ProjectCard title="Portfolio" description="Newer Portfolio website(This site!)" link="./" repo="https://github.com/limboden/limboden.github.io" />
+      </section>
+      <section>
+        <ProjectCard title="Portfolio" description="Newer Portfolio website(This site!)" link="./" repo="https://github.com/limboden/limboden.github.io" />
       </section>
     </div>
   );
