@@ -14,7 +14,9 @@ function App() {
   }
   return (
     <>
-      <header>Lukas Imboden</header>
+      <header>
+        <h1>Lukas Imboden</h1>
+      </header>
       <Nav />
       <main className="mx-3">
         <Outlet />

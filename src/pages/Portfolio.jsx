@@ -20,7 +20,7 @@ import ProjectCard from "../components/ProjectCard";
 export default function Portfolio() {
   return (
     <div>
-      <h1>Projects Page</h1>
+      <h2>Projects Page</h2>
       <section>
         <ProjectCard title="Portfolio" description="Newer Portfolio website(This site!)" link="./" repo="https://github.com/limboden/limboden.github.io" />
       </section>

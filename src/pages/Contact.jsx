@@ -1,3 +1,6 @@
+import React, { useState } from "react";
+
+
 const style = {
   label: {
     width: '70px',
@@ -6,19 +9,21 @@ const style = {
   },
   submitButton: {
     margin: '5px 0px',
-  }
+  },
+
 }
 
 
 
-
 export default function Contact() {
+
+
   return (
     <div>
       <h1>Contact Page</h1>
       <form id="contactForm" className="form-group">
         <div className="form-group">
-          <label htmlFor="name"><span className="text-danger"></span>Name: </label>
+          <label htmlFor="name">Name: </label>
           <input id="name" className="form-control" type="text" required />
           <label htmlFor="email">Email: </label>
           <input id="email" className="form-control" type="email" required />
