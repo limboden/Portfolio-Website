@@ -22,8 +22,8 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        <a class="btn btn-primary" target="_blank" style={styles.footerButtons} href="http://www.github.com/limboden">Github</a>
-        <a class="btn btn-primary" target="_blank" style={styles.footerButtons} href="https://www.linkedin.com/in/lukas-imboden-06b74a22a/">Linked In</a>
+        <a className="btn btn-primary" target="_blank" style={styles.footerButtons} href="http://www.github.com/limboden" rel="noreferrer">Github</a>
+        <a className="btn btn-primary" target="_blank" style={styles.footerButtons} href="https://www.linkedin.com/in/lukas-imboden-06b74a22a/" rel="noreferrer">Linked In</a>
       </footer>
     </>
   );
