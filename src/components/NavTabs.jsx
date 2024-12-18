@@ -5,9 +5,15 @@ import { Link, useLocation } from 'react-router-dom';
 function NavTabs() {
   const currentPage = useLocation().pathname;
 
+  const styles = {
+    navTabs: {
+      color: '#5D8465'
+    }
+  }
+
   return (
     <ul className="nav nav-tabs">
-      <li className="nav-item">
+      <li style={styles.navTabs} className="nav-item">
         <Link
           to="/"
           // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -17,7 +23,7 @@ function NavTabs() {
           About Me
         </Link>
       </li>
-      <li className="nav-item">
+      <li style={styles.navTabs} className="nav-item">
         <Link
           to="/Portfolio"
           // Check to see if the currentPage is `Projects`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -26,7 +32,7 @@ function NavTabs() {
           Portfolio
         </Link>
       </li>
-      <li className="nav-item">
+      <li style={styles.navTabs} className="nav-item">
         <Link
           to="/Contact"
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -35,7 +41,7 @@ function NavTabs() {
           Contact
         </Link>
       </li>
-      <li className="nav-item">
+      <li style={styles.navTabs} className="nav-item">
         <Link
           to="/Resume"
           // Check to see if the currentPage is `Resume`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
